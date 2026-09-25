@@ -1,0 +1,7 @@
+
+
+streamlit
+xgboost
+requests
+pandas
+numpy
