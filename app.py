@@ -113,15 +113,4 @@ with right_col:
 st.write("---")
 st.caption("Developed for the Dialog Innovation Challenge. Built with Streamlit, XGBoost, and Open-Meteo APIs.")
 
-# --- AUTOMATED REAL-TIME REFRESH LOOP ---
-# This forces the dashboard to auto-refresh every 5 seconds, pulling fresh API data
-import time
-
-# Create a small, clean visual indicator at the bottom so judges know it's live tracking
-st.write("---")
-st.caption(f"🔄 **Live Monitoring Active:** Last telemetry ping received at {time.strftime('%H:%M:%S')}")
-
-# Pause for 5 seconds before triggering the next layout rerun loop
-time.sleep(5)
-st.rerun()
 
