@@ -15,8 +15,9 @@ class ColdChainEngine:
         
     def calculate_eta(self, distance_nm, wave_h, wave_dir, current_spd):
         features = np.array([[wave_h, wave_dir, current_spd]])
-        predicted_speed = max(self.eta_model.predict(features), 2.0)
+        predicted_speed = max(float(self.eta_model.predict(features).item()), 2.0)
         return round(distance_nm / predicted_speed, 1)
+
 
 @st.cache_data
 def get_live_ocean_data(lat, lon):
