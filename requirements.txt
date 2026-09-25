@@ -5,3 +5,4 @@ xgboost
 requests
 pandas
 numpy
+scikit-learn
