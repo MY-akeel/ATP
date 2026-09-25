@@ -69,7 +69,7 @@ st.map(map_data, zoom=7)
 st.write("")
 
 # Main Dashboard Content layout
-left_col, right_col = st.columns()
+left_col, right_col = st.columns(2)
 
 with left_col:
     st.subheader(f"📊 Live Diagnostics: {vessel_select}")
